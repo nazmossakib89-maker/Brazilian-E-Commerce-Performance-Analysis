@@ -16,3 +16,11 @@ This project analyzes the Olist Brazilian E-Commerce dataset — a real-world, m
 6. What percentage of orders are delivered late versus on-time or early, and does this vary by region?
 7. Which product categories receive the most negative (1–2 star) reviews, and is this linked to delivery delays?
 8. How does freight (shipping) cost compare to product price across categories?
+
+
+## Excel Analysis
+
+Before any merging or cleaning, each raw table was explored independently in Excel using PivotTables to understand structure, distributions, and data quality issues.
+
+1. Order Status Breakdown Of 99,441 total orders, 96,478 (97%) are marked delivered. The remainder are split across shipped (1,107), canceled (625), unavailable (609), invoiced (314), processing (301), created (5), and approved (2). Canceled/ unavailable orders will be excluded from revenue calculations in later stages to avoid inflating sales figures.
+
