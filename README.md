@@ -30,5 +30,7 @@ Before any merging or cleaning, each raw table was explored independently in Exc
 6. Order Items (Price & Freight): Across 112,650 individual line items, total product price sold is $13.59M (average item price: $120.65), with total freight (shipping) cost of $2.25M.
 7. Geographic Concentration: Customers are heavily concentrated in São Paulo state (SP: 41,746 customers, ~42% of all customers), followed by Rio de Janeiro (RJ: 12,852) and Minas Gerais (MG: 11,635). Seller concentration is even more skewed toward SP: 1,849 of 3,095 sellers (~60%) are based there — indicating SP functions as the dataset's primary commercial hub for both supply and demand.
 
+📊 [View the cleaned workbook](Excel Analysis)
+
 
 
