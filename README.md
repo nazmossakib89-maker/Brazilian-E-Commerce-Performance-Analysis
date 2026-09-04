@@ -39,6 +39,7 @@ With the raw tables individually understood from the Excel stage, Python (Pandas
 2. Pre-Aggregating One-to-Many Tables: Since order_payments and order_reviews can contain multiple records per order, both were first collapsed to one row per order_id via groupby("order_id").agg() — summing installment payments and averaging review scores — before being merged, to prevent row-multiplication errors.
 3. Building the Master Dataset: orders was left-joined sequentially to order_items, the pre-aggregated payments and reviews tables, products (with English category names merged in), and finally customers/sellers for geographic attributes. Left joins were used throughout to preserve every order, including 775 orders with no item records — traced back to unavailable and canceled statuses, consistent with the Excel-stage findings.
 4. Data Quality Fix: Missing Product: Categories 623 unique products were found missing an English category name. Root-cause analysis showed 610 had a blank category in the source data, while 13 belonged to two valid categories simply absent from the translation file. The two known categories were manually mapped; the rest were labeled "unknown" rather than dropped, preserving their revenue data.
+5. Final Dataset: The cleaned dataset contains 113,425 rows and 24 columns, combining order, item, payment, review, product, customer, and seller data. All remaining missing values are logically explained rather than errors, and the result was exported to olist_full_data_cleaned.csv for the SQL and Power BI stages.
 
 
 
