@@ -41,6 +41,8 @@ With the raw tables individually understood from the Excel stage, Python (Pandas
 4. Data Quality Fix: Missing Product: Categories 623 unique products were found missing an English category name. Root-cause analysis showed 610 had a blank category in the source data, while 13 belonged to two valid categories simply absent from the translation file. The two known categories were manually mapped; the rest were labeled "unknown" rather than dropped, preserving their revenue data.
 5. Final Dataset: The cleaned dataset contains 113,425 rows and 24 columns, combining order, item, payment, review, product, customer, and seller data. All remaining missing values are logically explained rather than errors, and the result was exported to olist_full_data_cleaned.csv for the SQL and Power BI stages.
 
+📊 [View Full Pandas Analysis Notebook](https://github.com/nazmossakib89-maker/Brazilian-E-Commerce-Performance-Analysis/blob/main/Pandas%20Analysis/pandas_analysis.ipynb)
+
 
 
 
