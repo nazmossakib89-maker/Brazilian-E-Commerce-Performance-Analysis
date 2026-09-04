@@ -31,5 +31,12 @@ Before any merging or cleaning, each raw table was explored independently in Exc
 7. Geographic Concentration: Customers are heavily concentrated in São Paulo state (SP: 41,746 customers, ~42% of all customers), followed by Rio de Janeiro (RJ: 12,852) and Minas Gerais (MG: 11,635). Seller concentration is even more skewed toward SP: 1,849 of 3,095 sellers (~60%) are based there — indicating SP functions as the dataset's primary commercial hub for both supply and demand.
 
 
+## Pandas: Data Cleaning & Merging
+
+With the raw tables individually understood from the Excel stage, Python (Pandas) was used to correct data types, engineer new fields, and merge five relational tables into a single analytical dataset, using merge() for key-based joins and groupby() to pre-aggregate one-to-many tables before joining.
+
+1. Data Type Correction & Delivery Delay: All date/timestamp columns were converted from text to proper datetime64 objects, cutting the table's memory usage nearly in half and enabling direct date arithmetic. A delivery_delay_days column was then engineered as the gap between estimated and actual delivery dates — Pandas correctly propagates NaN for undelivered orders instead of producing corrupted values, unlike the equivalent Excel formula.
+
+
 
 
