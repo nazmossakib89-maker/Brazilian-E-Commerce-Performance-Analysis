@@ -54,6 +54,8 @@ The eight raw tables were loaded into a MySQL database (rather than the pre-merg
 
 Data Import All eight CSVs were loaded via LOAD DATA INFILE rather than the GUI import wizard, using NULLIF() on staged variables to convert blank strings to proper NULL values for numeric and date columns. The reviews file required additional preprocessing in Python: MySQL's parser does not reliably handle CSV fields with inconsistent quoting, so the source file was regenerated with every field fully quoted before import. Row counts for all eight tables were verified against the Excel and Pandas stages before any analysis began.
 
+Q1 — Category Revenue health_beauty is the top revenue-generating category ($1.26M from 9,670 items), narrowly ahead of watches_gifts ($1.2M from just 5,991 items) — the latter's higher average item price ($201 vs. $130) makes it a high-value, lower-volume driver, distinct from high-volume categories like bed_bath_table that generate revenue through scale rather than price.
+
 
 
 
