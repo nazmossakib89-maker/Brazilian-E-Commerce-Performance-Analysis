@@ -70,6 +70,7 @@ Data Import All eight CSVs were loaded via LOAD DATA INFILE rather than the GUI 
 
 **Q8 — Freight-to-Price Ratio** home_comfort_2 and flowers have the most disproportionate shipping costs, with average freight equal to 54% and 44% of the product price respectively — a ratio likely to discourage purchases and worth flagging for pricing or logistics review.
 
+🗄️ [View Full SQL Script](https://github.com/nazmossakib89-maker/Brazilian-E-Commerce-Performance-Analysis/blob/main/SQL%20Analysis/Olist%20SQL%20Analysis.sql)
 
 
 
