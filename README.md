@@ -60,7 +60,9 @@ Data Import All eight CSVs were loaded via LOAD DATA INFILE rather than the GUI 
 
 **Q3 — Geographic Distribution** São Paulo (SP) dominates in order volume (41,745 orders) but has the lowest average order value ($137.50) of the top 10 states, while smaller states like Bahia (BA) and Santa Catarina (SC) show notably higher average order values (up to $170.82) despite far lower volume.
 
+**Q4 — Payment Behavior** credit_card payments average 3.5 installments, versus exactly 1.0 for boleto, voucher, and debit card — indicating installment flexibility is likely a key reason credit card transactions carry a higher average value ($163) than other payment types.
 
+**Q5 — Seller Performance** Among the top 10 sellers by revenue, 9 are based in SP, consistent with the platform's supply concentration. Late-delivery rates among top sellers range from 4.19% to 14.32%, showing that high revenue does not always correlate with strong delivery reliability.
 
 
 
