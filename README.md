@@ -48,5 +48,12 @@ With the raw tables individually understood from the Excel stage, Python (Pandas
 📊 [View Full Pandas Analysis Notebook](https://github.com/nazmossakib89-maker/Brazilian-E-Commerce-Performance-Analysis/blob/main/Pandas%20Analysis/pandas_analysis.ipynb)
 
 
+## SQL Analysis
+
+The eight raw tables were loaded into a MySQL database (rather than the pre-merged Pandas dataset) specifically to demonstrate multi-table JOINs, subqueries, and aggregate SQL — building a normalized schema from scratch and answering each business question directly against it.
+
+Data Import All eight CSVs were loaded via LOAD DATA INFILE rather than the GUI import wizard, using NULLIF() on staged variables to convert blank strings to proper NULL values for numeric and date columns. The reviews file required additional preprocessing in Python: MySQL's parser does not reliably handle CSV fields with inconsistent quoting, so the source file was regenerated with every field fully quoted before import. Row counts for all eight tables were verified against the Excel and Pandas stages before any analysis began.
+
+
 
 
