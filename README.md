@@ -68,6 +68,8 @@ Data Import All eight CSVs were loaded via LOAD DATA INFILE rather than the GUI 
 
 **Q7 — Negative Reviews by Category** fashion_male_clothing (28.24%) and office_furniture (26.08%) have the highest shares of 1–2 star reviews among categories with at least 30 reviews. Furniture-related categories appear repeatedly in this list, suggesting a possible link to shipping damage or delivery issues for bulky items.
 
+**Q8 — Freight-to-Price Ratio** home_comfort_2 and flowers have the most disproportionate shipping costs, with average freight equal to 54% and 44% of the product price respectively — a ratio likely to discourage purchases and worth flagging for pricing or logistics review.
+
 
 
 
